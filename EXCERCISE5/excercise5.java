@@ -15,11 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button clickButton=findViewById(R.id.button1);
-        TextView text1=findViewById(R.id.textView1);
         clickButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-text1.setText("gtt");   }
+ Toast.makeText(getApplicationContext(),"click",Toast.LENGTH_SHORT).show();  }
         });
 
     }
