@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Examination"></TextView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Board"></TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Percentage"></TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Year of Passing"></TextView>
+</TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Class X"></TextView>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"></EditText>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"></EditText>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"></EditText>
+    </TableRow>
+<TableRow
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+<TextView
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Class XII"></TextView>
+<EditText
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"></EditText>
+<EditText
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"></EditText>
+<EditText
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"></EditText>
+</TableRow>
+<TableRow
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+<TextView
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Graduation"></TextView>
+<EditText
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"></EditText>
+<EditText
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"></EditText>
+<EditText
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"></EditText>
+</TableRow>
+    <Button
+        android:id="@+id/b1"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:text="Submit"></Button>
+</TableLayout>
