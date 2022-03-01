@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application10</string>
+    <string-array name="a1"><item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
