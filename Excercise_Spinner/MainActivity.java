@@ -1,21 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+package com.example.myapplication10;
 
-    <Spinner
-        android:id="@+id/s1"
-        android:layout_height="50dp"
-        android:layout_width="160dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.view.View;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.os.Bundle;
 
+// Main Activity implements Adapter view
+public class MainActivity extends AppCompatActivity {
+    Spinner s;
 
-</android.support.constraint.ConstraintLayout>
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        s= findViewById(R.id.s1);
+        ArrayAdapter<CharSequence> a=ArrayAdapter.createFromResource(this,R.array.a1,R.layout.support_simple_spinner_dropdown_item);
+        a.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        s.setAdapter(a);
+
+    }
+}
